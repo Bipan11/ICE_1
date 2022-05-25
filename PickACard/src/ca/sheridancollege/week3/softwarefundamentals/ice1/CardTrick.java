@@ -46,7 +46,7 @@ public class CardTrick {
         int Suit1  = some.nextInt();
         System.out.println("You card is : " +Value1+ "of "+Suit1);
         //insert code to ask the user for Card value and suit, create their card
-        
+       
         
         // and search luckyCard here
         for(Card result:luckyCard){
