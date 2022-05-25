@@ -20,21 +20,21 @@ public class CardTrick {
     public static void main(String[] args)
     {
         Scanner some = new Scanner(System.in);
-        Card[] magicHand = new Card[7];
+        Card[] luckyCard = new Card[7];
         
-        for (int i=0; i<magicHand.length; i++)
+        for (int i=0; i<luckyCard.length; i++)
         {
             Card c = new Card();
             
             c.setValue(c.userValue());
             //c.setValue(insert call to random number generator here)
             c.setSuit(Card.SUITS[c.userSuit()]);
-            magicHand[i]=c;
+            luckyCard[i]=c;
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
         
        
-        for(Card result:magicHand){
+        for(Card result:luckyCard){
             System.out.println(result.getSuit());
             System.out.println(result.getValue());
         }
@@ -48,11 +48,14 @@ public class CardTrick {
         //insert code to ask the user for Card value and suit, create their card
         
         
-        // and search magicHand here
-        for(Card result:magicHand){
-        if(Value1 == result.getValue()&& Suit1 ==result.getValue()){
-            System.out.println("Magic is Succesfull");
+        // and search luckyCard here
+        for(Card result:luckyCard){
+        if(Value1 == result.getValue() && Suit1 ==result.getValue()){
+            System.out.println("You Win");
         }
+            else{
+            System.out.println("You Lost");
+            }
         }
         //Then report the result here
     }
